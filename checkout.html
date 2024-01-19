@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font -->
+    <link href="https://fonts.cdnfonts.com/css/mango-vintage-personal-use-only" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/alice-2" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- icon -->
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body class="background-img" id="checkout">
+    <!-- header -->
+    <nav class="p-3 mb-0">
+        <ul class="d-flex justify-content-around align-items-center mb-0">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="none">
+                <h3 class="mb-0">Blooming Petals</h3>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container_checkout" id="main-div">
+
+        <form action="./thanksProduct.html" method="get">
+
+            <div class="checkout-flex-row">
+                <div class="checkout-flex-col width-40">
+                    <div>
+                        <h2>Checkout</h2>
+                    </div>
+                    <div class="checkout-flex-row">
+                        <div class="checkout-flex-col width-40">
+                            <div>
+                                <label for="firstName">
+                                    <h4>First name</h4>
+                                </label>
+                                <br>
+                                <input id="firstName" type="text" name="firstName" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="gov">
+                                    <h4>State</h4>
+                                </label>
+                                <br>
+                                <input id="gov" list="Governorate" name="Governorate" class="form-control" required>
+                                <datalist id="Governorate">
+                                    <option>Sindh</option>
+                                    <option>Balochistan</option>
+                                    <option>Punjab</option>
+                                    <option>Kpk</option>
+                                </datalist>
+
+                            </div>
+                            <div>
+                                <label for="phoneNumber">
+                                    <h4>Phone number</h4>
+                                </label><br>
+                                <input id="phoneNumber" type="text" name="phoneNumber" class="form-control" required>
+                                <p class="error">invalid phone number</p>
+                                <p class="error">enter number</p>
+                            </div>
+                            <div>
+                                <label for="email">
+                                    <h4>Email address</h4>
+                                </label><br>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                                <p class="error">invalid email</p>
+                            </div>
+                        </div>
+                        <div class="checkout-flex-col width-40">
+                            <div>
+                                <label for="lastName">
+                                    <h4>Last name</h4>
+                                </label><br>
+                                <input id="lastName" type="text" name="lastName" class="form-control" required>
+
+                            </div>
+                            <div>
+                                <Label for="date">
+                                    <h4>Date</h4>
+                                </Label><br>
+                                <input type="date" name="date" class="form-control" value="">
+                            </div>
+                            <div>
+                                <label for="notes">
+                                    <h4>Address</h4>
+                                </label>
+                                <br>
+                                <textarea id="notes" name="notes" class="form-control"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="checkout_submit">
+                        <input type="submit" value="Place Order">
+                        <p>Note: Payments are upon delivery</p>
+                    </div>
+                </div>
+
+                <div id="order_details">
+                    <img src="./images/p1 (1).jpg" height="400px">
+                    <div class="text">
+                        <p>Vibarent Charm</p>
+                        <span>12$</span>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+<footer class="ani mt-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="text-white">Explore</h3>
+                <ul>
+                    <li><a class="text-white-50" href="home.html">Home</a></li>
+                    <li><a class="text-white-50" href="products.html">Products</a></li>
+                    <li><a class="text-white-50" href="about.html">About Us</a></li>
+                    <li><a class="text-white-50" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-white">Follow Us</h3>
+                <ul>
+                    <li><a class="text-white-50" href="https://www.facebook.com/"><i class="fa-brands fa-facebook me-2"></i> Facebook</a>
+                    </li>
+                    <li><a class="text-white-50" href="https://www.instagram.com/"><i class="fa-brands fa-instagram me-2"></i> Instagram</a>
+                    </li>
+                    <li><a class="text-white-50" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest me-2"></i> Pinterest</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-white">Address</h3>
+                <p class="text-white-50">
+                    123 Main Street<br>
+                    Karachi, Pakistan<br>
+                    ZIP Code: 12345
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+    <script src="JS/checkout/checkout.js"></script>
+    <script src="JS/checkout/form_validation.js"></script>
+
+</body>
+
+</html>
